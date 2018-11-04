@@ -1,0 +1,25 @@
+/*Comments in CSS look like this.*/
+
+h1.centerAlign{
+	text-align: center;
+}
+
+h2.rightAlign{
+	text-align: right;
+}
+
+p.centerAlign{
+	text-align: center;
+}
+
+testClass{
+	text-align: right;
+}
+
+centerAlign{
+	text-align: center;
+}
+
+colorRed{
+	color : red;
+}
