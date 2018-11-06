@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JavaScript</title>
+		<script src="scripts.js"></script>
+		<style>
+			body{
+				font-family: monospace;
+			}
+		</style>
+		<!-- In a function example-->
+		<script>
+			function headCallback(){
+				document.getElementById("headID").innerHTML = "After Change!"
+			}
+		</script>
+		
+		<!-- Not in a function example-->
+		<script>
+			document.getElementById("labelToChange").innerHTML = "After Change!"
+		</script>
+	</head>
+	<body>
+		<script>
+			function bodyCallback(){
+				document.getElementById("bodyID").innerHTML = "After Change!"
+			}
+		</script>
+		
+		<!-- Header -->
+		<div>
+			<h1>JavaScript</h1>
+			<p>Just like CSS, JavaScript can be added to HTML documents in a few ways.</p>
+
+			<p>JavaScript within a &lt;script&gt; tag, but <u>not</u> in a function will run on page load.<br>
+				Code <u>within</u> a function will run when that function is called. (See head element of this document)</p>
+			
+			<pre>What can JavaScript do?
+    - Change HTML content.
+    - Change HTML attribute values.
+    - Change HTML styles (CSS).
+    - Can hide and show HTML elements.
+			</pre>
+			
+			<p>Let's look at how to define a button callback with the different methods of defining JavaScript.</p>
+			<hr>
+		</div>
+		
+		<!-- In the head element -->
+		<div>
+			<br>
+			<p><b>In the &lt;head&gt; element.</b></p>
+			<p>You can define a button's callback with a script tag and function in the document's head element.</p>
+			<p>This requires the addition of a script tag with an src attribute in the head element of the document.</p>
+			<p>The script tag looks like this:<br>
+			<pre>
+&lt;script&gt;
+function headCallback(){
+	document.getElementById("headID").innerHTML = "After Change!"
+}
+&lt;/script&gt;
+			</pre>
+			<p>The result looks like this:</p>
+			<p id="headID">Before Change</p>
+			<button onclick="headCallback()">Button Text</button>
+			<hr>
+		</div>
+		
+		<!-- In the body element -->
+		<div>
+			<br>
+			<p><b>In the &lt;body&gt; element.</b></p>
+			<p>Defining JS in the body element is very similar to defining it in the head element.<br>
+				An identical script tag is used, it's just placed in the body.</p>
+			<p>The result looks like this:</p>
+			<p id="bodyID">Before Change</p>
+			<button onclick="bodyCallback()">Button Text</button>
+			<hr>
+		</div>
+		
+		<!-- HTML Event -->
+		<div>
+			<br>
+			<p><b>HTML Event</b></p>
+			<p>You can define a button's callback with an HTML event like this:<br>
+				&lt;button onclick="document.getElementById(&amp;#34;attributeID&amp;#34;).innerHTML = &amp;#34After Change!&amp;#34;"&gt;Button Text&lt;/script&gt;</p>
+			
+			<p>The result looks like this:</p>
+			<p id="attributeID">Before Change</p>
+			<button onclick="document.getElementById(&#34;attributeID&#34;).innerHTML = &#34After Change!&#34;">Button Text</button>
+			
+			<pre>Some common HTML events:
+    - onchange    - Triggers when an HTML element has been changed.
+    - onclick     - Triggers when the user clicks the element.
+    - onmouseover - Triggers when the user moves the mouse over the element.
+    - onmouseout  - Triggers when the user moves the mouse away from the HTML element.
+    - onkeydown   - Triggers when the user pushes a keyboard key.
+    - onload      - Triggers when the browser has finished loading the page.
+			</pre>
+			<hr>
+		</div>
+		
+		<!-- External -->
+		<div>
+			<br>
+			<p><b>Externally</b></p>
+			<p>You can define a button's callback with JavaScript in an external file.</p>
+			<p>This requires the addition of a script tag with an src attribute in the head element of the document.</p>
+			<p>The script tag looks like this:<br>
+				&lt;script src="fileName.js"&gt;&lt;/script&gt;</p>
+			<p>The result looks like this:</p>
+			<p id="externalID">Before Change</p>
+			<button onclick="externalCallback()">Button Text</button>
+			
+			<pre>External references can take a few different forms:
+    - Full URL                    - &lt;script src="https://www.w3schools.com/js/myScript1.js"&gt;&lt;/script&gt;
+    - Specified folder            - &lt;script src="/js/myScript1.js"&gt;&lt;/script&gt;
+    - Same folder as current page - &lt;script src="myScript1.js"&gt;&lt;/script&gt;
+			</pre>
+			<hr>
+		</div>
+		
+		<p>w3schools has great reference material for JavaScript syntax, and integrating it into HTML documents.<br>
+			You can find that page --> <a href="https://www.w3schools.com/js/default.asp">here.</a></p>
+		
+	</body>
+</html>
