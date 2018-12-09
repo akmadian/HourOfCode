@@ -20,8 +20,8 @@ There are a couple of giant lists of Web APIs on GitHub.
  - [abhishekbanthia/Public-APIs](https://github.com/abhishekbanthia/Public-APIs)
 
 ### Week 5 - PHP
-[w3Schools PHP Tutorial[(https://www.w3schools.com/php/default.asp)
-[What is PHP?](https://whatis.techtarget.com/definition/PHP-Hypertext-Preprocessor)
+[w3Schools PHP Tutorial](https://www.w3schools.com/php/default.asp)
+<br>[What is PHP?](https://whatis.techtarget.com/definition/PHP-Hypertext-Preprocessor)
 
 ## Other Resources
 ##### I use a lot of examples from [w3schools.](https://www.w3schools.com/default.asp)
