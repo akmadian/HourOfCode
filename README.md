@@ -3,6 +3,8 @@ This repo contains all of the documents I use for teaching at Hour of Code meeti
 
 <br>
 
+Presentations are all publicly available in [this Google Drive folder](https://drive.google.com/drive/folders/1PLIeUo6ZiC2S5fyGx_lUrXPssesvMxzP?usp=sharing) 
+
 ## Resources By Week
 ### Week 1 - HTML
 [w3Schools HTML Tutorial](https://www.w3schools.com/html/default.asp)
