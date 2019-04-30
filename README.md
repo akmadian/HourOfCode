@@ -3,6 +3,8 @@ This repo contains all of the documents I use for teaching at Hour of Code meeti
 
 <br>
 
+# **_[Presentations](https://drive.google.com/drive/folders/1PLIeUo6ZiC2S5fyGx_lUrXPssesvMxzP?usp=sharing)_**
+
 Presentations are all publicly available in [this Google Drive folder](https://drive.google.com/drive/folders/1PLIeUo6ZiC2S5fyGx_lUrXPssesvMxzP?usp=sharing) 
 
 ## Resources By Week
