@@ -1,72 +1,17 @@
 <html>
-	<head>
-		<title>
-			CSS
-		</title>
-		<style>
-			body{
-				font-family: sans-serif;
-			}
-			h1{
-				font-family: monospace;
-			}
-			#centerAlign{
-				text-align: center;
-			}
-		</style>
-		<link rel="stylesheet" type="text/css" href="style.css">
-		
-	</head>
-
-	<body>
-		<div>
-			<h1 class="centerAlign">CSS</h1>
-			<p>CSS stands for Cascading Style Sheet. CSS is used in html and web design to help define how things might look.</p>
-			<p>CSS can be added to HTML elements in 3 ways.</p>
-			<pre>
- - <b>Inline</b> - By using style attributes in the HTML elements.
- - <b>Internal</b> - By using a &lt;style&gt; element in the &lt;head&gt; section.
- - <b>External</b> - By writing the CSS in an external file.
-			</pre>
-			<p>If you are only working with a couple style modifications on only a few elements, inline will work fine. However, If you are applying <br>several modifications to an element, you will want to get into internal or external CSS.</p>
-			<hr>
-			<br>
-		</div>
-		
-		<h2>Inline</h2>
-		<p>Inline CSS can be added by using attributes.</p>
-		<p>If you wanted to center align a paragraph element, you would use the <code>align</code> attribute with a value of "center".</p>
-		<p>The center aligned paragraph would look like this: &lt;p align="center"&gt;Paragraph text here.&lt;p&gt;</p>
-		<br>
-		<p align="center">Inline looks like this.</p>
-		<hr>
-		<br>
-		
-		<h2>Internal</h2>
-		<p>CSS can be defined internaly inside of an HTML document.</p>
-		<p>To assign internal style to an HTML element, use the <code>id</code> attribute.</p>
-		<p>The center aligned paragraph would look like this: &lt;p id="centerAlign"&gt;Paragraph text here.&lt;p&gt;</p>
-		<br>
-		<p id="centerAlign">Internal looks like this.</p>
-		<p>Defining style for a tag internally will automatically apply to all elements of that type in the document. <br>
-		    See the style section in this doc for an example.</p>
-		<hr>
-		<br>
-		
-		
-		<h2>External</h2>
-		<p>CSS can be defined externally, outside of an HTML document.</p>
-		<p>To assign external style to an HTML element, use the <code>class</code> attribute.</p>
-		<p>The center aligned paragraph would look like this: &lt;p class="centerAlign"&gt;Paragraph text here.&lt;p&gt;</p>
-		<br>
-		<p class="centerAlign">External looks like this.</p>
-		<hr>
-		<br>
-		
-		<p align="center">All of these implementations look the same, but are all done in different ways.</p>
-		<br>
-		
-		<p>Just like HTML tags, there are tons of CSS Properties. You can check out w3school's list <a href="https://www.w3schools.com/cssref/default.asp"> here</a></p>
-		<p>openbookproject.net has a good page on important CSS properties you should know. You can find it <a href="http://www.openbookproject.net/tutorials/getdown/css/resources/lesson1/css_properties.html"> here.</a></p>
-	</body>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <style>
+        test {
+            color: aqua;
+        }
+    </style>
+    <body>
+        <p class="testClass">Test of external css</p>
+        <p style="color:red; text-align: center">Test Inline CSS</p>
+        <p class="test">Test In-File CSS</p>
+        <p class="centerAlign">Test of tag specific class</p>
+        <h2 class="centerAlign">Test of tag specific class</h2>
+    </body>
 </html>
